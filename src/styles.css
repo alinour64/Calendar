@@ -1,0 +1,131 @@
+.calendar {
+  margin-top: 90px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  z-index: 100;
+}
+.day-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+}
+.days-container {
+  flex: 1 1 13.14%;
+  height: 100px;
+  border: 1px solid;
+  color: white;
+  background-color: black;
+}
+.day {
+  height: 100px;
+  position: absolute;
+  width: 14.2vw;
+  height: 98px;
+}
+.day:hover {
+  background-color: red;
+}
+.day:active {
+  background-color: grey;
+}
+.daysOfWeek {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dayOfWeek {
+  border: 1px solid;
+  flex: 1 1 13.14%;
+  color: white;
+  background-color: black;
+}
+.current {
+  border: 3px solid blue;
+  width: 14.2vw;
+  height: 97px;
+  position: absolute;
+}
+.today {
+  /* background-color: red; */
+  width: 14.2vw;
+  height: 98px;
+  position: absolute;
+}
+.add-events {
+  background-color: green;
+  border-radius: 25px;
+  font-size: 25px;
+  bottom: 0;
+  position: relative;
+  float: right;
+  float: bottom;
+  margin-top: 50px;
+  /* margin-right: 5px; */
+}
+.add-events:hover {
+  background-color: lightgreen;
+}
+.add-events:active {
+  background-color: darkgreen;
+}
+.new-event {
+  /* opacity: 25%; */
+  background-color: orange;
+  transform: translate(0%, 0%);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 30vw;
+  margin-top: 80px;
+  z-index: 100000;
+}
+.events {
+  position: absolute;
+  z-index: 2;
+}
+.close-btn {
+  background-color: red;
+  border: 3px white solid;
+  float: right;
+  z-index: 25;
+}
+.event {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.eventDisplay {
+  margin-top: 2.5vh;
+  width: 14vw;
+  background-color: aqua;
+  color: black;
+  position: absolute;
+}
+.showDetails {
+  z-index: 101;
+  background-color: orange;
+  transform: translate(0%, 0%);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 40vh;
+  width: 30vw;
+  margin-top: 80px;
+}
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+}
