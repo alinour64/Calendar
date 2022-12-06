@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Event(props) {
   function show() {
+    // console.log(props.formData);
     return (
       <div className="showDetails">
         <button
@@ -28,14 +29,16 @@ export default function Event(props) {
   // console.log(props.arrayOfEvents);
   let display = "";
   function name(event) {
-    // console.log(props.arrayOfEvents);
-    // console.log(event);
+    console.log(props.arrayOfEvents);
+    console.log(event);
     props.date.getFullYear() == event.startDate.split("-")[0]
       ? props.date.getMonth() + 1 == event.startDate.split("-")[1]
         ? props.dayOfMonth >= Number(event.startDate.split("-")[2])
           ? props.dayOfMonth <= Number(event.endDate.split("-")[2])
             ? props.id > props.dayOfMonth - props.id &&
-              props.id < props.numDays + props.id
+              props.id + props.firstDay < props.numDays + props.id &&
+              props.id < props.numDays + props.id &&
+              props.id <= props.numDays + props.firstDay
               ? (display = event.name)
               : (display = "")
             : (display = "")

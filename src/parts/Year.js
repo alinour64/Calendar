@@ -30,7 +30,7 @@ export default function Year() {
     notes: "",
   };
   const [formData, setFormData] = useState(ogFormData);
-  console.log(formData);
+  // console.log(formData);
   const [display, setDisplay] = React.useState(false);
   const [showDetails, setShowDetails] = React.useState(false);
   const [arrayOfEvents, setArrayOfEvents] = useState([]);
